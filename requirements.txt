@@ -1,0 +1,9 @@
+streamlit
+altair
+matplotlib
+numpy
+pandas
+# scipy==1.5.4
+# streamlit==0.7.0
+
+scipy
