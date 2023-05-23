@@ -3,12 +3,25 @@ import pandas as pd
 import numpy as np
 import altair as alt
 
+from image import Image
+
+image = Image()
+image.read("./static/test.jpg")
+
 
 st.set_page_config(page_title="Begin", page_icon="🔰")
 
 # st.markdown("# Plotting Demo")
 # st.sidebar.header("Plotting Demo")
 st.header("Everytime you point your phone camera and take a picture, you are collecting data.")
+
+import os
+st.write(os.getcwd())
+# st.write(os.())
+
+st.image(image.data)
+
+st.image(image.to_grayscale())
 
 # progress_bar = st.sidebar.progress(0)
 # status_text = st.sidebar.empty()
